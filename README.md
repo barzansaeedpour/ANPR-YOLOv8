@@ -1,1 +1,1 @@
-# ANPR-YOLOv8
+# ANPR-YOLOv7
