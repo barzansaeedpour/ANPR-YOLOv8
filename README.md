@@ -1,4 +1,4 @@
-# ANPR-YOLOv7
+# ANPR-YOLOv8
 
 # How to use:
 1- create a virtual environment:
@@ -10,13 +10,19 @@ python -m venv env
 env\Scripts\activate
 ```
 
-3- download YOLOv7:
+4- install ultralytics:
+```
+pip install ultralytics
+```
 
-the following command will create a folder named yolov7.
+5- install pytorch with cuda support:
+
 ```
-git clone https://github.com/augmentedstartups/yolov7.git
+pip install --upgrade torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
 ```
-4- install the requirements:
+<!-- pip install torch --upgrade torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 -->
+
+6- Train the model
 ```
-pip install -r yolov7\requirements.txt
+yolo task=detect mode=train epochs=5 data='dataset\yolov8\data.yaml' model=yolov8m.pt imgsz=300 batch=2 
 ```
