@@ -1,4 +1,7 @@
 # ANPR-YOLOv8
+### Automtic number plate recognition (Iranian)
+
+### سامانه هوشمند تشخیص پلاک ایرانی
 
 # Results
 
