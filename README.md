@@ -18,11 +18,10 @@ pip install ultralytics
 5- install pytorch with cuda support:
 
 ```
-pip install --upgrade torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+pip install torch --upgrade torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
-<!-- pip install torch --upgrade torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118 -->
 
 6- Train the model
 ```
-yolo task=detect mode=train epochs=5 data='dataset\yolov8\data.yaml' model=yolov8m.pt imgsz=300 batch=2 
+yolo task=detect mode=train epochs=50 data='dataset\yolov8\data.yaml' model=yolov8m.pt imgsz=300 batch=2 
 ```
