@@ -2,45 +2,9 @@
 
 # Results
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    table, th, td {
-      border: 1px solid #ddd;
-    }
-
-    th, td {
-      padding: 8px;
-      text-align: center;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
-</head>
-<body>
-
-<table>
-  <tr>
-    <td><img src="files/1.jpg" alt="Image 1"></td>
-    <td><img src="files/4.jpeg" alt="Image 4"></td>
-  </tr>
- 
-</table>
-
-</body>
-</html>
+| image 1 | image 2 |
+|----------|----------|
+|<img src="files/1.jpg" alt="Image 1">|<img src="files/4.jpeg" alt="Image 4">|
 
 
 
