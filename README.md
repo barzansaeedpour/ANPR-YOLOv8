@@ -24,4 +24,4 @@ pip install torch --upgrade torchvision torchaudio --index-url https://download.
 6- Train the model
 ```
 yolo task=detect mode=train epochs=50 data='dataset\yolov8\data.yaml' model=yolov8m.pt imgsz=300 batch=2 
-```
+``` 
