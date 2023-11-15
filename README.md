@@ -1,5 +1,5 @@
 # ANPR-YOLOv8
-### Automtic number plate recognition (Iranian)
+### Automatic number plate recognition (Iranian)
 
 ### سامانه هوشمند تشخیص پلاک ایرانی
 
@@ -9,9 +9,13 @@
 |----------|----------|
 |<img src="files/1.jpg" alt="Image 1">|<img src="files/4.jpeg" alt="Image 4">|
 
+# Dataset
+You can download the dataset from my roboflow profile:
+https://universe.roboflow.com/barzansaeedpour/anpr-iranian-2
 
+You can also use the code in (download_dataset.py) to download it. 
 
-# How to use:
+# How to use
 1- create a virtual environment:
 ```
 python -m venv env
@@ -34,10 +38,17 @@ pip install torch --upgrade torchvision torchaudio --index-url https://download.
 
 6- Train the model
 ```
-yolo task=detect mode=train epochs=50 data='dataset\yolov8\data.yaml' model=yolov8m.pt imgsz=300 batch=2 
+yolo task=detect mode=train epochs=50 data='dataset/data.yaml' model=yolov8m.pt imgsz=300 batch=2 
 ```
 
 7- Test the model
 ```
-yolo task=detect mode=predict model="runs/detect/train/weights/best.pt" save=True conf=0.3 source='dataset/yolov8/test/images/'
+yolo task=detect mode=predict model="runs/detect/train/weights/best.pt" save=True conf=0.3 source='dataset/test/images/'
 ```
+
+# Truck scale results (نمونه تشخیص در باسکول)
+
+|  |  |
+|----------|----------|
+|<img src="files/2.png" alt="Image 2">|<img src="files/3.png" alt="Image 3">|
+|<img src="files/5.png" alt="Image 5">|<img src="files/6.png" alt="Image 6">|

@@ -1,8 +1,8 @@
 task: detect
 mode: train
 model: yolov8m.pt
-data: dataset/yolov8/data.yaml
-epochs: 60
+data: dataset/roboflow/data.yaml
+epochs: 100
 patience: 50
 batch: 2
 imgsz: 300
@@ -12,7 +12,7 @@ cache: false
 device: null
 workers: 8
 project: null
-name: train
+name: train3
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -95,4 +95,4 @@ mixup: 0.0
 copy_paste: 0.0
 cfg: null
 tracker: botsort.yaml
-save_dir: H:\barzan backup\ANPR-yolov8\runs\detect\train
+save_dir: H:\barzan backup\ANPR-yolov8\runs\detect\train3
