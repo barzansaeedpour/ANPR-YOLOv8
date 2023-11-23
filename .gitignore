@@ -2,3 +2,4 @@ env/
 dataset/
 results/
 yolov8_env/
+/runs

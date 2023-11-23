@@ -93,14 +93,16 @@ def persian(text):
 # image_path = './dataset/yolov8/test/images/100_jpg.rf.98eed42565c91e604d2c2ee7f558792a.jpg'
 # image_path = 'dataset/yolov8/test2/r2-7ea5-41789-11130-3.jpg'
 # image_path = 'dataset/yolov8/test2/WhatsApp Image 2022-05-30 at 9.52.11 PM (1).jpeg'
-image_path = 'dataset/yolov8/test2/WhatsApp Image 2022-05-30 at 9.52.06 PM.jpeg'
+# image_path = 'dataset/yolov8/test2/1652275461010_shot.jpg'
+# image_path = 'dataset/yolov8/test2/kapra.jpg'
+# image_path = 'dataset/yolov8/test2/Screenshot 2022-06-07 094350.png'
+image_path = 'dataset/yolov8/test2/Screenshot 2022-06-07 102750.png'
 
 
 
 img = cv2.imread(image_path)
 # results = model(img, stream=True)
 results = model.predict(source=image_path, conf = 0.1, show = False) 
-    
 
 
 
@@ -133,10 +135,10 @@ for r in results:
         # plate_img_gr = cv2.imread('results/cropped_image.png', 0 )
 
 
-        try:
-            plate_img = adjust(plate_img)
-        except:
-            pass
+        # try:
+        #     plate_img = adjust(plate_img)
+        # except:
+        #     pass
 
         h = plate_img.shape[0]
         w = plate_img.shape[1]
@@ -164,10 +166,5 @@ for r in results:
         draw.text(org, persian(text), fill=(255,255,255), font=font)
         img = np.array(img)
 
-       
-
-
-        
-        
 
     cv2.imwrite('results/r.png', img)
