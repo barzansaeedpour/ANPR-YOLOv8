@@ -8,12 +8,12 @@ import numpy as np
 
 
 # start webcam
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 cap.set(3, 640)
 cap.set(4, 480)
 
 # model
-model = YOLO("./runs/detect/train/weights/best.pt")
+model = YOLO("./runs/detect/train2/weights/best.pt")
 
 classNames = [
               'پلاک',
@@ -55,7 +55,7 @@ while True:
             font = ImageFont.truetype("./fonts/BZar.ttf", size=23)
             text = classNames[cls]
             color = (0, 0, 255)  # Red color
-            draw.rectangle([(org[0], org[1]), (org[0]+180, org[1]+25)], fill =(255,100,100))
+            draw.rectangle([(org[0], org[1]), (org[0]+(len(text)*15), org[1]+25)], fill =(255,100,100))
             draw.text(org, persian(text), fill=(255,255,255), font=font)
             img = np.array(img)
 
