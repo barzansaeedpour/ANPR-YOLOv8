@@ -3,9 +3,12 @@ import matplotlib.patches as patches
 from PIL import Image
 import cv2
 
-names = {0:'License'}
-lis = open("./runs/detect/predict6/labels/frame-1-0002175.txt" , "r").readlines()
-image_path = './dataset/Khanm-Rahmani/selected_mini/frame-1-0002175.jpg'
+names = {0:'0', 1:'1', 2:'2',3:'3', 4:'4', 5:'5',
+          6:'6',7:'7', 8:'8', 9:'9',10:'re'}
+# lis = open("./runs/detect/predict6/labels/frame-1-0002175.txt" , "r").readlines()
+# image_path = './dataset/Khanm-Rahmani/selected_mini/frame-1-0002175.jpg'
+lis = open("./generate_plate/generated/temp0.txt" , "r").readlines()
+image_path = './generate_plate/generated/temp0.png'
 img = cv2.imread(image_path)
 
 for l in lis:
