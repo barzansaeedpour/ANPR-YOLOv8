@@ -4,3 +4,4 @@ results/
 yolov8_env/
 /runs
 /generate_plate/generated/
+/generate_plate/generated_old/

@@ -2,9 +2,9 @@ import os
 import cv2
 
 
-images_path = "dataset/Khanm-Rahmani/selected/"
-labels_path = "runs/detect/predict6/labels/"
-output_path = "dataset/extracted-plates/"
+images_path = "dataset/only_plates_raw/farid02/cars/images/"
+labels_path = "dataset/only_plates_raw/farid02/cars/labels/"
+output_path = "./dataset/only_plates_raw/farid02/plates/"
 
 
 
