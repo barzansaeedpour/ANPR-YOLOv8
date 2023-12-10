@@ -2,9 +2,9 @@ import os
 import cv2
 
 
-images_path = "dataset/only_plates_raw/farid02/cars/images/"
-labels_path = "dataset/only_plates_raw/farid02/cars/labels/"
-output_path = "./dataset/only_plates_raw/farid02/plates/"
+images_path = "dataset/only_plates_raw/Iranian-plate-from-kaggle.v1i.yolov8/train/images/"
+labels_path = "dataset/only_plates_raw/Iranian-plate-from-kaggle.v1i.yolov8/train/labels/"
+output_path = "./dataset/only_plates_raw/kaggle/plates/"
 
 
 
@@ -33,7 +33,7 @@ for file in files:
 
 
         plate = img[top_left[1]:bottom_right[1], top_left[0]:bottom_right[0]]
-        plate = cv2.resize(plate, (200, 100))   
+        # plate = cv2.resize(plate, (200, 100))   
         cv2.imwrite(output_path + image_name, plate)
         # cv2.imshow("plate",plate)
         # cv2.waitKey(0)
