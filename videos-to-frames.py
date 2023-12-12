@@ -1,7 +1,7 @@
 import cv2
 import os
 
-for N in [0,1,2,3]:
+for N in [4,5,6]:
     video_path= f'./dataset/videos/sanandaj0{N}.mp4'
     vidcap = cv2.VideoCapture(video_path)
     success,image = vidcap.read()
