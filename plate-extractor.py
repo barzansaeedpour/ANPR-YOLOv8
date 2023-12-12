@@ -2,9 +2,9 @@ import os
 import cv2
 
 
-images_path = "dataset/only_plates_raw/Iranian-plate-from-kaggle.v1i.yolov8/train/images/"
-labels_path = "dataset/only_plates_raw/Iranian-plate-from-kaggle.v1i.yolov8/train/labels/"
-output_path = "./dataset/only_plates_raw/kaggle/plates/"
+images_path = "./dataset/ANPR-3/images/"
+labels_path = "./dataset/ANPR-3/labels/"
+output_path = "./dataset/ANPR-3/extracted-plates/"
 
 
 
