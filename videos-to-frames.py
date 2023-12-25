@@ -1,12 +1,12 @@
 import cv2
 import os
 
-for N in [4,5,6]:
-    video_path= f'./dataset/videos/sanandaj0{N}.mp4'
+for N in [2,3,4,5,6,7,8]:
+    video_path= f'./dataset/videos/tehran_0{N}.mp4'
     vidcap = cv2.VideoCapture(video_path)
     success,image = vidcap.read()
     count = 0
-    target_path = f"./dataset/sanandaj/"
+    target_path = f"./dataset/tehran/"
     os.makedirs(target_path, exist_ok=True)
 
     # fps = 30
