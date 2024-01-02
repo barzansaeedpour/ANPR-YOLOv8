@@ -4,6 +4,10 @@
 ### سامانه تشخیص پلاک ایرانی
 
 # Results
+|  |  |
+|----------|----------|
+|<img src="files/11.png" alt="Image 2">|<img src="files/11_detected_chars.png" alt="Image 3">|
+|<img src="files/3_.png" alt="Image 2">|<img src="files/3_detected_chars.png" alt="Image 3">|
 
 | image 1 | image 2 |
 |----------|----------|
@@ -46,12 +50,6 @@ yolo task=detect mode=train epochs=50 data='dataset/data.yaml' model=yolov8m.pt 
 yolo task=detect mode=predict model="runs/detect/train/weights/best.pt" save=True conf=0.3 source='dataset/test/images/'
 ```
 
-# Detection results (نمونه تشخیص)
-
-|  |  |
-|----------|----------|
-|<img src="files/11.png" alt="Image 2">|<img src="files/11_detected_chars.png" alt="Image 3">|
-|<img src="files/3_.png" alt="Image 2">|<img src="files/3_detected_chars.png" alt="Image 3">|
 
 # Truck scale results (نمونه تشخیص در باسکول)
 
