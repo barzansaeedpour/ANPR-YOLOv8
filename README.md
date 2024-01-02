@@ -3,7 +3,7 @@
 
 ### سامانه تشخیص پلاک ایرانی
 
-# Results
+# Results - نتایج
 |  |  |
 |----------|----------|
 |<img src="files/11.png" alt="Image 2">|<img src="files/11_detected_chars.png" alt="Image 3">|
@@ -51,8 +51,7 @@ yolo task=detect mode=predict model="runs/detect/train/weights/best.pt" save=Tru
 
 |  |  |
 |----------|----------|
-|<img src="files/2.png" alt="Image 2">|<img src="files/3.png" alt="Image 3">|
-|<img src="files/5.png" alt="Image 5">|<img src="files/6.png" alt="Image 6">|
+|<img src="files/2.png" alt="Image 2">|<img src="files/6.png" alt="Image 6">|
 
 # Truck scale results (نمونه تشخیص حروف پلاک در باسکول)
 
