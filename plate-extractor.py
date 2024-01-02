@@ -2,9 +2,9 @@ import os
 import cv2
 
 
-images_path = "./dataset/ANPR-3/images/"
-labels_path = "./dataset/ANPR-3/labels/"
-output_path = "./dataset/ANPR-3/extracted-plates/"
+images_path = "./dataset/ANPR-4/images/"
+labels_path = "./dataset/ANPR-4/labels/"
+output_path = "./dataset/ANPR-4/extracted-plates/"
 
 
 
