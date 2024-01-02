@@ -9,10 +9,6 @@
 |<img src="files/11.png" alt="Image 2">|<img src="files/11_detected_chars.png" alt="Image 3">|
 |<img src="files/3_.png" alt="Image 2">|<img src="files/3_detected_chars.png" alt="Image 3">|
 
-| image 1 | image 2 |
-|----------|----------|
-|<img src="files/1.jpg" alt="Image 1">|<img src="files/4.jpeg" alt="Image 4">|
-
 # Dataset
 You can download the dataset from my roboflow profile:
 https://universe.roboflow.com/barzansaeedpour/anpr-iranian-2
@@ -51,9 +47,15 @@ yolo task=detect mode=predict model="runs/detect/train/weights/best.pt" save=Tru
 ```
 
 
-# Truck scale results (نمونه تشخیص در باسکول)
+# Truck scale results (نمونه تشخیص قالب پلاک در باسکول)
 
 |  |  |
 |----------|----------|
 |<img src="files/2.png" alt="Image 2">|<img src="files/3.png" alt="Image 3">|
 |<img src="files/5.png" alt="Image 5">|<img src="files/6.png" alt="Image 6">|
+
+# Truck scale results (نمونه تشخیص حروف پلاک در باسکول)
+
+|  |  |
+|----------|----------|
+|<img src="files/00582.png" alt="Image 2">|<img src="files/00582_detected_chars.png" alt="Image 3">|
