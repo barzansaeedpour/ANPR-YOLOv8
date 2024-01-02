@@ -47,13 +47,13 @@ yolo task=detect mode=predict model="runs/detect/train/weights/best.pt" save=Tru
 ```
 
 
-# Truck scale results - Plate Localization (نمونه تشخیص قالب پلاک در باسکول)
+## Truck scale results - Plate Localization (نمونه تشخیص قالب پلاک در باسکول)
 
 |  |  |
 |----------|----------|
 |<img src="files/2.png" alt="Image 2">|<img src="files/6.png" alt="Image 6">|
 
-# Truck scale results - Character Detection (نمونه تشخیص حروف پلاک در باسکول)
+## Truck scale results - Character Detection (نمونه تشخیص حروف پلاک در باسکول)
 
 |  |  |
 |----------|----------|
