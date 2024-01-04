@@ -12,7 +12,7 @@ names= ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'be', 'dal', 'ein', 'g
 # lis = open("./runs/detect/predict6/labels/frame-1-0002175.txt" , "r").readlines()
 # image_path = './dataset/Khanm-Rahmani/selected_mini/frame-1-0002175.jpg'
 
-# path = './dataset/temp/train/'
+path = './dataset/temp/train/'
 # path = './dataset/temp/valid/'
 # path = './dataset/temp/test/'
 output_path = './dataset/char-all-check/'
