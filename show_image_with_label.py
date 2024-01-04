@@ -6,14 +6,15 @@ import os
 
 # names = {0:'0', 1:'1', 2:'2',3:'3', 4:'4', 5:'5',
 #           6:'6',7:'7', 8:'8', 9:'9',10:'re'}
-names= ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'be', 'dal', 'ein', 'gaf', 'ghaf', 'h', 'he', 'jim', 'lam', 'mim', 'noon', 'sad', 'sin', 'ta', 'te', 'waw', 'ye']
+# names= ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'be', 'dal', 'ein', 'gaf', 'ghaf', 'h', 'he', 'jim', 'lam', 'mim', 'noon', 'sad', 'sin', 'ta', 'te', 'waw', 'ye']
+names= ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'be', 'dal', 'ein', 'ghaf', 'h', 'he', 'jim', 'lam', 'mim', 'noon', 'sad', 'sin', 'ta', 'te', 'waw', 'ye']
 
 # lis = open("./runs/detect/predict6/labels/frame-1-0002175.txt" , "r").readlines()
 # image_path = './dataset/Khanm-Rahmani/selected_mini/frame-1-0002175.jpg'
 
 # path = './dataset/temp/train/'
 # path = './dataset/temp/valid/'
-path = './dataset/temp/test/'
+# path = './dataset/temp/test/'
 output_path = './dataset/char-all-check/'
 for file in os.listdir(f'{path}images/'):
     
